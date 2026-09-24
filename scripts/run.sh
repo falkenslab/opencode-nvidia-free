@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Ejecuta las fases del experimento desde el anfitrión.
-# Uso: scripts/run.sh [stable] [dev] [ratelimit]   (sin argumentos: las tres)
+# Uso: scripts/run.sh [audit] [stable] [dev] [ratelimit]   (sin argumentos: las cuatro)
 #
 # Necesita Docker y NVIDIA_API_KEY. Si la variable no está en el entorno y estamos en
 # Windows, se lee de las variables de usuario sin mostrarla.
@@ -16,14 +16,14 @@ export RUN_DATE="${RUN_DATE:-$(date +%F)}"
 export MSYS_NO_PATHCONV=1
 
 MODELS=(
-  moonshotai/kimi-k3
-  qwen/qwen3-coder-480b-a35b-instruct
   z-ai/glm-5.3
-  openai/gpt-oss-120b
-  nvidia/nemotron-3-nano-30b-a3b
+  nvidia/nemotron-3.5-lightning-30b-a3b
+  poolside/laguna-xs-2.1
+  meta/muse-glimmer-30b
+  z-ai/glm-5.3-flash
 )
-DEV_MODEL="moonshotai/kimi-k3"
-RATELIMIT_MODEL="meta/llama-3.1-8b-instruct"
+DEV_MODEL="nvidia/nemotron-3.5-lightning-30b-a3b"
+RATELIMIT_MODEL="meta/llama-3.2-11b-vision-instruct"
 PAUSE_S="${PAUSE_S:-65}"   # pausa entre ejecuciones para empezar cada una con la ventana de un minuto limpia
 
 phase_start() {  # $1 = etiqueta del proxy, $2 = parámetros a quitar
@@ -56,6 +56,16 @@ run_dev() {
   phase_end
 }
 
+run_audit() {
+  docker compose run --rm --no-deps -e NVIDIA_API_KEY proxy     python -u /app/audit.py "/results/${RUN_DATE}-audit.jsonl"
+  redact
+}
+
+# Los errores 404 de NVIDIA incluyen un identificador de la cuenta: se anonimiza en los resultados.
+redact() {
+  sed -i -E "s/for account '[^']+'/for account '<redacted>'/g" results/${RUN_DATE}-*.jsonl results/${RUN_DATE}-*.log 2>/dev/null || true
+}
+
 run_ratelimit() {
   sleep "$PAUSE_S"
   docker compose run --rm --no-deps -e NVIDIA_API_KEY proxy \
@@ -63,10 +73,11 @@ run_ratelimit() {
 }
 
 PHASES=("$@")
-[ ${#PHASES[@]} -eq 0 ] && PHASES=(stable dev ratelimit)
+[ ${#PHASES[@]} -eq 0 ] && PHASES=(audit stable dev ratelimit)
 for p in "${PHASES[@]}"; do
   echo "=== fase: $p ($(date -u +%H:%M:%SZ))"
   "run_$p"
 done
 docker compose down >/dev/null 2>&1 || true
+redact
 echo "=== fin ($(date -u +%H:%M:%SZ)). Resultados en results/${RUN_DATE}-*"

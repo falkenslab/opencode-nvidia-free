@@ -1,0 +1,8 @@
+phase,model,opencode_version,start_utc,end_utc,duration_s,opencode_exit,pytest_exit,passed,failed,tests_untouched
+stable,z-ai/glm-5.3,1.18.32,2026-09-24T22:41:43Z,2026-09-24T22:42:21Z,38,0,0,15,0,yes
+stable,nvidia/nemotron-3.5-lightning-30b-a3b,1.18.32,2026-09-24T22:43:29Z,2026-09-24T22:45:02Z,93,0,0,15,0,yes
+stable,poolside/laguna-xs-2.1,1.18.32,2026-09-24T22:46:10Z,2026-09-24T22:51:15Z,305,0,0,15,0,yes
+stable,meta/muse-glimmer-30b,1.18.32,2026-09-24T22:52:23Z,2026-09-24T22:52:36Z,13,0,1,0,15,yes
+stable,z-ai/glm-5.3-flash,1.18.32,2026-09-24T22:53:44Z,2026-09-24T22:55:30Z,106,0,0,15,0,yes
+dev,nvidia/nemotron-3.5-lightning-30b-a3b,0.0.0-dev-202609241927,2026-09-24T22:58:11Z,2026-09-24T23:00:43Z,152,0,0,15,0,yes
+dev-strip,nvidia/nemotron-3.5-lightning-30b-a3b,0.0.0-dev-202609241927,2026-09-24T23:02:05Z,2026-09-24T23:02:46Z,41,0,0,15,0,yes

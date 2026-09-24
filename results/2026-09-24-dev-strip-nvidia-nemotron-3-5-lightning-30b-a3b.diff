@@ -1,0 +1,44 @@
+diff --git a/slugify.py b/slugify.py
+index 3844f80..5ef2365 100755
+--- a/slugify.py
++++ b/slugify.py
+@@ -1,5 +1,7 @@
+ """Convierte textos en slugs para URLs."""
+ 
++import unicodedata
++
+ 
+ def slugify(text: str, max_length: int = 50) -> str:
+     """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+@@ -7,8 +9,29 @@ def slugify(text: str, max_length: int = 50) -> str:
+     - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+     - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+     - Sin guiones al principio ni al final.
+-    - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
++    - Como máximo `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+       Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+     - Si no queda nada, devuelve una cadena vacía.
+     """
+-    raise NotImplementedError
++    text = text.lower()
++    text = unicodedata.normalize("NFKD", text)
++    text = "".join(c for c in text if not unicodedata.combining(c))
++    text = " ".join(text.split())
++    parts = []
++    for char in text:
++        if char.isalnum():
++            parts.append(char)
++        else:
++            parts.append(" ")
++    text = " ".join("".join(parts).split())
++    words = text.split()
++    if not words:
++        return ""
++    result = words[0]
++    if len(result) > max_length:
++        result = result[:max_length]
++    for word in words[1:]:
++        if len(result) + 1 + len(word) > max_length:
++            break
++        result += "-" + word
++    return result

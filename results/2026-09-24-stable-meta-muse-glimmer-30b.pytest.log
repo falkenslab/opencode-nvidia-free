@@ -1,0 +1,610 @@
+FFFFFFFFFFFFFFF                                                          [100%]
+=================================== FAILURES ===================================
+_____________________ test_slugify[Hola Mundo-hola-mundo] ______________________
+
+text = 'Hola Mundo', expected = 'hola-mundo'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Hola Mundo', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_ test_slugify[  espacios   al   principio y al final  -espacios-al-principio-y-al-final] _
+
+text = '  espacios   al   principio y al final  '
+expected = 'espacios-al-principio-y-al-final'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '  espacios   al   principio y al final  ', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+____________ test_slugify[Canci\xf3n del pirata-cancion-del-pirata] ____________
+
+text = 'Canción del pirata', expected = 'cancion-del-pirata'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Canción del pirata', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_________ test_slugify[A\xf1o nuevo, vida nueva-ano-nuevo-vida-nueva] __________
+
+text = 'Año nuevo, vida nueva', expected = 'ano-nuevo-vida-nueva'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Año nuevo, vida nueva', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_______________ test_slugify[Ping\xfcino & C\xeda.-pinguino-cia] _______________
+
+text = 'Pingüino & Cía.', expected = 'pinguino-cia'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'Pingüino & Cía.', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_________ test_slugify[\xbfQu\xe9 tal? \xa1Muy bien!-que-tal-muy-bien] _________
+
+text = '¿Qué tal? ¡Muy bien!', expected = 'que-tal-muy-bien'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '¿Qué tal? ¡Muy bien!', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_______________________ test_slugify[C++ vs. C#-c-vs-c] ________________________
+
+text = 'C++ vs. C#', expected = 'c-vs-c'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'C++ vs. C#', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_________________ test_slugify[versi\xf3n 2.0.3-version-2-0-3] _________________
+
+text = 'versión 2.0.3', expected = 'version-2-0-3'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'versión 2.0.3', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_____________ test_slugify[ya-tiene--guiones----ya-tiene-guiones] ______________
+
+text = 'ya-tiene--guiones---', expected = 'ya-tiene-guiones'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'ya-tiene--guiones---', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_____ test_slugify[MAY\xdaSCULAS Y min\xfasculas-mayusculas-y-minusculas] ______
+
+text = 'MAYÚSCULAS Y minúsculas', expected = 'mayusculas-y-minusculas'
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'MAYÚSCULAS Y minúsculas', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_______________________________ test_slugify[-] ________________________________
+
+text = '', expected = ''
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+______________________________ test_slugify[!!!-] ______________________________
+
+text = '!!!', expected = ''
+
+    @pytest.mark.parametrize(
+        "text, expected",
+        [
+            ("Hola Mundo", "hola-mundo"),
+            ("  espacios   al   principio y al final  ", "espacios-al-principio-y-al-final"),
+            ("Canción del pirata", "cancion-del-pirata"),
+            ("Año nuevo, vida nueva", "ano-nuevo-vida-nueva"),
+            ("Pingüino & Cía.", "pinguino-cia"),
+            ("¿Qué tal? ¡Muy bien!", "que-tal-muy-bien"),
+            ("C++ vs. C#", "c-vs-c"),
+            ("versión 2.0.3", "version-2-0-3"),
+            ("ya-tiene--guiones---", "ya-tiene-guiones"),
+            ("MAYÚSCULAS Y minúsculas", "mayusculas-y-minusculas"),
+            ("", ""),
+            ("!!!", ""),
+        ],
+    )
+    def test_slugify(text, expected):
+>       assert slugify(text) == expected
+
+test_slugify.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = '!!!', max_length = 50
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+____________________ test_max_length_cuts_at_word_boundary _____________________
+
+    def test_max_length_cuts_at_word_boundary():
+        text = "el experimento del cuaderno del doctor falken con modelos gratuitos"
+>       result = slugify(text, max_length=30)
+
+test_slugify.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'el experimento del cuaderno del doctor falken con modelos gratuitos'
+max_length = 30
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+_______________________ test_max_length_long_first_word ________________________
+
+    def test_max_length_long_first_word():
+>       assert slugify("supercalifragilisticoespialidoso", max_length=10) == "supercalif"
+
+test_slugify.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'supercalifragilisticoespialidoso', max_length = 10
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+__________________________ test_max_length_exact_fit ___________________________
+
+    def test_max_length_exact_fit():
+>       assert slugify("hola mundo", max_length=10) == "hola-mundo"
+
+test_slugify.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+text = 'hola mundo', max_length = 10
+
+    def slugify(text: str, max_length: int = 50) -> str:
+        """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+    
+        - Quita acentos y diacríticos (á → a, ñ → n, ü → u).
+        - Cualquier secuencia de caracteres que no sean letras o dígitos se convierte en un único guion.
+        - Sin guiones al principio ni al final.
+        - Como mucho `max_length` caracteres, cortando en un límite de palabra (sin dejar un guion final).
+          Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+        - Si no queda nada, devuelve una cadena vacía.
+        """
+>       raise NotImplementedError
+E       NotImplementedError
+
+slugify.py:14: NotImplementedError
+=========================== short test summary info ============================
+FAILED test_slugify.py::test_slugify[Hola Mundo-hola-mundo] - NotImplementedE...
+FAILED test_slugify.py::test_slugify[  espacios   al   principio y al final  -espacios-al-principio-y-al-final]
+FAILED test_slugify.py::test_slugify[Canci\xf3n del pirata-cancion-del-pirata]
+FAILED test_slugify.py::test_slugify[A\xf1o nuevo, vida nueva-ano-nuevo-vida-nueva]
+FAILED test_slugify.py::test_slugify[Ping\xfcino & C\xeda.-pinguino-cia] - No...
+FAILED test_slugify.py::test_slugify[\xbfQu\xe9 tal? \xa1Muy bien!-que-tal-muy-bien]
+FAILED test_slugify.py::test_slugify[C++ vs. C#-c-vs-c] - NotImplementedError
+FAILED test_slugify.py::test_slugify[versi\xf3n 2.0.3-version-2-0-3] - NotImp...
+FAILED test_slugify.py::test_slugify[ya-tiene--guiones----ya-tiene-guiones]
+FAILED test_slugify.py::test_slugify[MAY\xdaSCULAS Y min\xfasculas-mayusculas-y-minusculas]
+FAILED test_slugify.py::test_slugify[-] - NotImplementedError
+FAILED test_slugify.py::test_slugify[!!!-] - NotImplementedError
+FAILED test_slugify.py::test_max_length_cuts_at_word_boundary - NotImplemente...
+FAILED test_slugify.py::test_max_length_long_first_word - NotImplementedError
+FAILED test_slugify.py::test_max_length_exact_fit - NotImplementedError
+15 failed in 0.08s

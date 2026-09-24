@@ -1,0 +1,43 @@
+diff --git a/slugify.py b/slugify.py
+index 3844f80..5c3d00f 100755
+--- a/slugify.py
++++ b/slugify.py
+@@ -1,5 +1,8 @@
+ """Convierte textos en slugs para URLs."""
+ 
++import re
++import unicodedata
++
+ 
+ def slugify(text: str, max_length: int = 50) -> str:
+     """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+@@ -11,4 +14,27 @@ def slugify(text: str, max_length: int = 50) -> str:
+       Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+     - Si no queda nada, devuelve una cadena vacía.
+     """
+-    raise NotImplementedError
++    normalized = unicodedata.normalize('NFKD', text)
++    ascii_text = normalized.encode('ascii', 'ignore').decode('ascii')
++    ascii_text = ascii_text.lower()
++    
++    ascii_text = re.sub(r'[^a-z0-9]+', '-', ascii_text)
++    ascii_text = ascii_text.strip('-')
++    
++    if not ascii_text:
++        return ''
++    
++    if len(ascii_text) <= max_length:
++        return ascii_text
++    
++    parts = ascii_text.split('-')
++    if len(parts) > 1:
++        result = parts[0]
++        for part in parts[1:]:
++            if len(result) + 1 + len(part) <= max_length:
++                result += '-' + part
++            else:
++                break
++        return result
++    else:
++        return ascii_text[:max_length]
+\ No newline at end of file

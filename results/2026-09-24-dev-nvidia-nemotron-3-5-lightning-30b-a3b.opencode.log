@@ -1,0 +1,66 @@
+timestamp=2026-09-24T22:58:13.356Z level=INFO run=464e5792 message="creating instance" directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b
+timestamp=2026-09-24T22:58:13.359Z level=INFO run=464e5792 message=fromDirectory directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b
+timestamp=2026-09-24T22:58:13.502Z level=INFO run=464e5792 message=bootstrapping directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b
+timestamp=2026-09-24T22:58:13.539Z level=INFO run=464e5792 message=loading path=/root/.config/opencode/config.json
+timestamp=2026-09-24T22:58:13.553Z level=INFO run=464e5792 message=loading path=/root/.config/opencode/opencode.json
+timestamp=2026-09-24T22:58:13.570Z level=INFO run=464e5792 message=loading path=/root/.config/opencode/opencode.jsonc
+timestamp=2026-09-24T22:58:14.039Z level=INFO run=464e5792 message="all LSPs are disabled"
+timestamp=2026-09-24T22:58:14.042Z level=INFO run=464e5792 message="all formatters are disabled"
+timestamp=2026-09-24T22:58:14.042Z level=INFO run=464e5792 message=init
+timestamp=2026-09-24T22:58:14.407Z level=INFO run=464e5792 message=created id=ses_f2a5beef8ffe83fMzKGUddvusO slug=crisp-nebula version=0.0.0-dev-202609241927 projectID=82ce0005b557044b58a0ed86b51fbfdacb2677c9 directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b path="" workspaceID=undefined parentID=undefined title="New session - 2026-09-24T22:58:14.407Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1790290694407 time.updated=1790290694407
+timestamp=2026-09-24T22:58:14.443Z level=INFO run=464e5792 message="event connected"
+timestamp=2026-09-24T22:58:15.478Z level=INFO run=464e5792 message=loop session.id=ses_f2a5beef8ffe83fMzKGUddvusO step=0
+timestamp=2026-09-24T22:58:15.521Z level=INFO run=464e5792 message=stream providerID=nvidia modelID=nvidia/nemotron-3.5-lightning-30b-a3b session.id=ses_f2a5beef8ffe83fMzKGUddvusO small=true agent=title mode=primary
+timestamp=2026-09-24T22:58:15.566Z level=INFO run=464e5792 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=nvidia/nemotron-3.5-lightning-30b-a3b
+timestamp=2026-09-24T22:58:16.000Z level=INFO run=464e5792 message=initialized
+timestamp=2026-09-24T22:58:16.104Z level=INFO run=464e5792 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T22:58:16.115Z level=INFO run=464e5792 message="shell tool using shell" shell=/usr/bin/bash
+timestamp=2026-09-24T22:58:16.130Z level=INFO run=464e5792 message=init count=1
+timestamp=2026-09-24T22:58:16.329Z level=INFO run=464e5792 message="watcher backend" directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b platform=linux backend=inotify
+timestamp=2026-09-24T22:58:16.332Z level=INFO run=464e5792 message="project copy refresh started" projectID=82ce0005b557044b58a0ed86b51fbfdacb2677c9
+timestamp=2026-09-24T22:58:17.048Z level=INFO run=464e5792 message="project copy refresh done" projectID=82ce0005b557044b58a0ed86b51fbfdacb2677c9 updated=[] removed=[]
+timestamp=2026-09-24T22:58:17.073Z level=INFO run=464e5792 message="booting location services" directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b workspaceID=undefined
+timestamp=2026-09-24T22:58:17.112Z level=INFO run=464e5792 message=process session.id=ses_f2a5beef8ffe83fMzKGUddvusO messageID=msg_0d5a4153b001M23z9joq2ZiLMq
+timestamp=2026-09-24T22:58:17.114Z level=INFO run=464e5792 message=stream providerID=nvidia modelID=nvidia/nemotron-3.5-lightning-30b-a3b session.id=ses_f2a5beef8ffe83fMzKGUddvusO small=false agent=build mode=primary
+timestamp=2026-09-24T22:58:17.118Z level=INFO run=464e5792 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=nvidia/nemotron-3.5-lightning-30b-a3b
+timestamp=2026-09-24T22:58:19.691Z level=INFO run=464e5792 message=evaluated permission=glob pattern=**/slugify* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:58:19.721Z level=INFO run=464e5792 message="downloading ripgrep" url=https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz
+timestamp=2026-09-24T22:58:20.288Z level=INFO run=464e5792 message=evaluated permission=glob pattern=**/test_slugify* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:58:21.050Z level=INFO run=464e5792 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T22:58:21.108Z level=INFO run=464e5792 message=loop session.id=ses_f2a5beef8ffe83fMzKGUddvusO step=1
+timestamp=2026-09-24T22:58:21.208Z level=INFO run=464e5792 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T22:58:21.238Z level=INFO run=464e5792 message=process session.id=ses_f2a5beef8ffe83fMzKGUddvusO messageID=msg_0d5a42b37001HjpGaAPtrdlkvX
+timestamp=2026-09-24T22:58:21.239Z level=INFO run=464e5792 message=stream providerID=nvidia modelID=nvidia/nemotron-3.5-lightning-30b-a3b session.id=ses_f2a5beef8ffe83fMzKGUddvusO small=false agent=build mode=primary
+timestamp=2026-09-24T22:58:21.243Z level=INFO run=464e5792 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=nvidia/nemotron-3.5-lightning-30b-a3b
+timestamp=2026-09-24T22:58:23.319Z level=INFO run=464e5792 message=evaluated permission=read pattern=slugify.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:58:23.378Z level=INFO run=464e5792 message="touching file" file=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b/slugify.py
+timestamp=2026-09-24T22:58:25.062Z level=INFO run=464e5792 message=evaluated permission=read pattern=test_slugify.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:58:25.122Z level=INFO run=464e5792 message="touching file" file=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b/test_slugify.py
+timestamp=2026-09-24T22:58:25.204Z level=INFO run=464e5792 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T22:58:25.310Z level=INFO run=464e5792 message=loop session.id=ses_f2a5beef8ffe83fMzKGUddvusO step=2
+timestamp=2026-09-24T22:58:25.404Z level=INFO run=464e5792 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T22:58:25.442Z level=INFO run=464e5792 message=process session.id=ses_f2a5beef8ffe83fMzKGUddvusO messageID=msg_0d5a43ba2001FmNYNfH57EJjnO
+timestamp=2026-09-24T22:58:25.445Z level=INFO run=464e5792 message=stream providerID=nvidia modelID=nvidia/nemotron-3.5-lightning-30b-a3b session.id=ses_f2a5beef8ffe83fMzKGUddvusO small=false agent=build mode=primary
+timestamp=2026-09-24T22:58:25.453Z level=INFO run=464e5792 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=nvidia/nemotron-3.5-lightning-30b-a3b
+timestamp=2026-09-24T22:59:14.247Z level=INFO run=464e5792 message=cleanup prune=7.days
+timestamp=2026-09-24T23:00:38.966Z level=INFO run=464e5792 message=evaluated permission=edit pattern=slugify.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T23:00:38.978Z level=INFO run=464e5792 message=formatting file=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b/slugify.py
+timestamp=2026-09-24T23:00:38.983Z level=INFO run=464e5792 message="touching file" file=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b/slugify.py
+timestamp=2026-09-24T23:00:39.076Z level=INFO run=464e5792 message=tracking hash=c59afbd46a58287ec1909e6896fa2965c267731b cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T23:00:39.155Z level=INFO run=464e5792 message=loop session.id=ses_f2a5beef8ffe83fMzKGUddvusO step=3
+timestamp=2026-09-24T23:00:39.209Z level=INFO run=464e5792 message=tracking hash=c59afbd46a58287ec1909e6896fa2965c267731b cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T23:00:39.245Z level=INFO run=464e5792 message=process session.id=ses_f2a5beef8ffe83fMzKGUddvusO messageID=msg_0d5a646760018QVV3nJialoeI8
+timestamp=2026-09-24T23:00:39.246Z level=INFO run=464e5792 message=stream providerID=nvidia modelID=nvidia/nemotron-3.5-lightning-30b-a3b session.id=ses_f2a5beef8ffe83fMzKGUddvusO small=false agent=build mode=primary
+timestamp=2026-09-24T23:00:39.249Z level=INFO run=464e5792 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=nvidia/nemotron-3.5-lightning-30b-a3b
+timestamp=2026-09-24T23:00:40.493Z level=INFO run=464e5792 message="resolved path" arg=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b resolved=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b
+timestamp=2026-09-24T23:00:40.496Z level=INFO run=464e5792 message=evaluated permission=bash pattern="python -m pytest test_slugify.py -v" action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T23:00:40.901Z level=INFO run=464e5792 message=tracking hash=2fc31c7f6c75678ef0d6b75abaf8004045508c38 cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T23:00:40.940Z level=INFO run=464e5792 message=loop session.id=ses_f2a5beef8ffe83fMzKGUddvusO step=4
+timestamp=2026-09-24T23:00:41.020Z level=INFO run=464e5792 message=tracking hash=2fc31c7f6c75678ef0d6b75abaf8004045508c38 cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T23:00:41.057Z level=INFO run=464e5792 message=process session.id=ses_f2a5beef8ffe83fMzKGUddvusO messageID=msg_0d5a64d6f001SDh1oO9VnIvUgR
+timestamp=2026-09-24T23:00:41.059Z level=INFO run=464e5792 message=stream providerID=nvidia modelID=nvidia/nemotron-3.5-lightning-30b-a3b session.id=ses_f2a5beef8ffe83fMzKGUddvusO small=false agent=build mode=primary
+timestamp=2026-09-24T23:00:41.075Z level=INFO run=464e5792 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=nvidia/nemotron-3.5-lightning-30b-a3b
+timestamp=2026-09-24T23:00:43.439Z level=INFO run=464e5792 message=tracking hash=2fc31c7f6c75678ef0d6b75abaf8004045508c38 cwd=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b git=/root/.local/share/opencode/snapshot/82ce0005b557044b58a0ed86b51fbfdacb2677c9/f18cff747bfd003fd7cfdc02f9cd2cc5b422bb9c
+timestamp=2026-09-24T23:00:43.497Z level=INFO run=464e5792 message=loop session.id=ses_f2a5beef8ffe83fMzKGUddvusO step=5
+timestamp=2026-09-24T23:00:43.500Z level=INFO run=464e5792 message="exiting loop" session.id=ses_f2a5beef8ffe83fMzKGUddvusO
+timestamp=2026-09-24T23:00:43.515Z level=INFO run=464e5792 message="disposing instance" directory=/work/dev-nvidia-nemotron-3-5-lightning-30b-a3b

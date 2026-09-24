@@ -1,0 +1,100 @@
+timestamp=2026-09-24T22:46:12.544Z level=INFO run=c1eae574 message="creating instance" directory=/work/stable-poolside-laguna-xs-2-1
+timestamp=2026-09-24T22:46:12.548Z level=INFO run=c1eae574 message=fromDirectory directory=/work/stable-poolside-laguna-xs-2-1
+timestamp=2026-09-24T22:46:12.720Z level=INFO run=c1eae574 message=bootstrapping directory=/work/stable-poolside-laguna-xs-2-1
+timestamp=2026-09-24T22:46:12.738Z level=INFO run=c1eae574 message=loading path=/root/.config/opencode/config.json
+timestamp=2026-09-24T22:46:12.740Z level=INFO run=c1eae574 message=loading path=/root/.config/opencode/opencode.json
+timestamp=2026-09-24T22:46:12.752Z level=INFO run=c1eae574 message=loading path=/root/.config/opencode/opencode.jsonc
+timestamp=2026-09-24T22:46:13.154Z level=INFO run=c1eae574 message="all LSPs are disabled"
+timestamp=2026-09-24T22:46:13.157Z level=INFO run=c1eae574 message="all formatters are disabled"
+timestamp=2026-09-24T22:46:13.158Z level=INFO run=c1eae574 message=init
+timestamp=2026-09-24T22:46:13.496Z level=INFO run=c1eae574 message=created id=ses_f2a66ef07ffemPxQiSWliy4uGs slug=jolly-lagoon version=1.18.32 projectID=2dcaab50752d7eeb1814573911f3e2ebec08d2bc directory=/work/stable-poolside-laguna-xs-2-1 path="" workspaceID=undefined parentID=undefined title="New session - 2026-09-24T22:46:13.496Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1790289973496 time.updated=1790289973496
+timestamp=2026-09-24T22:46:13.522Z level=INFO run=c1eae574 message="event connected"
+timestamp=2026-09-24T22:46:14.686Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=0
+timestamp=2026-09-24T22:46:14.734Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=true agent=title mode=primary
+timestamp=2026-09-24T22:46:14.771Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:46:14.978Z level=INFO run=c1eae574 message=initialized
+timestamp=2026-09-24T22:46:15.087Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:46:15.107Z level=INFO run=c1eae574 message="shell tool using shell" shell=/usr/bin/bash
+timestamp=2026-09-24T22:46:15.138Z level=INFO run=c1eae574 message=init count=1
+timestamp=2026-09-24T22:46:15.528Z level=INFO run=c1eae574 message="watcher backend" directory=/work/stable-poolside-laguna-xs-2-1 platform=linux backend=inotify
+timestamp=2026-09-24T22:46:15.534Z level=INFO run=c1eae574 message="project copy refresh started" projectID=2dcaab50752d7eeb1814573911f3e2ebec08d2bc
+timestamp=2026-09-24T22:46:16.472Z level=INFO run=c1eae574 message="project copy refresh done" projectID=2dcaab50752d7eeb1814573911f3e2ebec08d2bc updated=[] removed=[]
+timestamp=2026-09-24T22:46:16.609Z level=INFO run=c1eae574 message="booting location services" directory=/work/stable-poolside-laguna-xs-2-1 workspaceID=undefined
+timestamp=2026-09-24T22:46:16.633Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59915a3001WY0lnqphJ07W9h
+timestamp=2026-09-24T22:46:16.637Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:46:16.641Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:47:13.379Z level=INFO run=c1eae574 message=cleanup prune=7.days
+timestamp=2026-09-24T22:47:45.190Z level=INFO run=c1eae574 message=evaluated permission=glob pattern=**/*.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:47:45.206Z level=INFO run=c1eae574 message="downloading ripgrep" url=https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz
+timestamp=2026-09-24T22:47:46.045Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:47:46.107Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=1
+timestamp=2026-09-24T22:47:46.169Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:47:46.208Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59a7abe001dS0llJfb2oHcaI
+timestamp=2026-09-24T22:47:46.210Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:47:46.232Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:48:43.731Z level=INFO run=c1eae574 message=evaluated permission=read pattern=test_slugify.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:48:43.751Z level=INFO run=c1eae574 message="touching file" file=/work/stable-poolside-laguna-xs-2-1/test_slugify.py
+timestamp=2026-09-24T22:48:43.857Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:48:43.928Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=2
+timestamp=2026-09-24T22:48:43.973Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:48:44.015Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59b5c9b001foKm8A5G7m70jT
+timestamp=2026-09-24T22:48:44.017Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:48:44.047Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:48:44.581Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (32/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:48:46.664Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:48:46.667Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:48:47.109Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (66/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:48:51.521Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:48:51.524Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:48:52.099Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (76/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:49:01.037Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:01.043Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:01.540Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (95/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:49:19.383Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:19.386Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:20.441Z level=INFO run=c1eae574 message=evaluated permission=read pattern=slugify.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:49:20.491Z level=INFO run=c1eae574 message="touching file" file=/work/stable-poolside-laguna-xs-2-1/slugify.py
+timestamp=2026-09-24T22:49:20.543Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:20.597Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=3
+timestamp=2026-09-24T22:49:20.652Z level=INFO run=c1eae574 message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:20.690Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59bebd8001pmf6O5F8k53rXv
+timestamp=2026-09-24T22:49:20.692Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:20.713Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:21.149Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (33/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:49:23.522Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:23.532Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:24.062Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (33/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:49:28.330Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:28.339Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:28.836Z level=ERROR run=c1eae574 message="stream error" providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary error.error.message="ResourceExhausted: Worker local total request limit reached (33/32)" error.error.type=internal_server_error error.error.code=500
+timestamp=2026-09-24T22:49:37.711Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:37.720Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:39.314Z level=INFO run=c1eae574 message="resolved path" arg=/work/stable-poolside-laguna-xs-2-1 resolved=/work/stable-poolside-laguna-xs-2-1
+timestamp=2026-09-24T22:49:39.317Z level=INFO run=c1eae574 message=evaluated permission=bash pattern="python -m pytest test_slugify.py -v" action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:49:39.735Z level=INFO run=c1eae574 message=tracking hash=d918bcc4a4b8b650f51a4b7da8b5c1cd3021ae8f cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:39.796Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=4
+timestamp=2026-09-24T22:49:39.852Z level=INFO run=c1eae574 message=tracking hash=d918bcc4a4b8b650f51a4b7da8b5c1cd3021ae8f cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:39.876Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59c36d7001ndtg5exT2cKp5m
+timestamp=2026-09-24T22:49:39.878Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:39.898Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:48.683Z level=INFO run=c1eae574 message=evaluated permission=edit pattern=slugify.py action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:49:48.687Z level=INFO run=c1eae574 message=formatting file=/work/stable-poolside-laguna-xs-2-1/slugify.py
+timestamp=2026-09-24T22:49:48.689Z level=INFO run=c1eae574 message="touching file" file=/work/stable-poolside-laguna-xs-2-1/slugify.py
+timestamp=2026-09-24T22:49:48.783Z level=INFO run=c1eae574 message=tracking hash=cb483e7decf5f4b178648bc29b2af6cc05e0fccc cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:48.854Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=5
+timestamp=2026-09-24T22:49:48.913Z level=INFO run=c1eae574 message=tracking hash=cb483e7decf5f4b178648bc29b2af6cc05e0fccc cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:48.950Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59c5a39001wo3coRNQwhez3k
+timestamp=2026-09-24T22:49:48.951Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:48.954Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:49:50.622Z level=INFO run=c1eae574 message="resolved path" arg=/work/stable-poolside-laguna-xs-2-1 resolved=/work/stable-poolside-laguna-xs-2-1
+timestamp=2026-09-24T22:49:50.623Z level=INFO run=c1eae574 message=evaluated permission=bash pattern="python -m pytest test_slugify.py -v" action.permission=* action.action=allow action.pattern=*
+timestamp=2026-09-24T22:49:50.956Z level=INFO run=c1eae574 message=tracking hash=92eea71b9e35f3e87d0eb5f17fdaba03bcd02b01 cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:51.035Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=6
+timestamp=2026-09-24T22:49:51.113Z level=INFO run=c1eae574 message=tracking hash=92eea71b9e35f3e87d0eb5f17fdaba03bcd02b01 cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:49:51.146Z level=INFO run=c1eae574 message=process session.id=ses_f2a66ef07ffemPxQiSWliy4uGs messageID=msg_0d59c62bf001Ec4CqtkcRZEc1v
+timestamp=2026-09-24T22:49:51.188Z level=INFO run=c1eae574 message=stream providerID=nvidia modelID=poolside/laguna-xs-2.1 session.id=ses_f2a66ef07ffemPxQiSWliy4uGs small=false agent=build mode=primary
+timestamp=2026-09-24T22:49:51.193Z level=INFO run=c1eae574 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=poolside/laguna-xs-2.1
+timestamp=2026-09-24T22:51:15.486Z level=INFO run=c1eae574 message=tracking hash=92eea71b9e35f3e87d0eb5f17fdaba03bcd02b01 cwd=/work/stable-poolside-laguna-xs-2-1 git=/root/.local/share/opencode/snapshot/2dcaab50752d7eeb1814573911f3e2ebec08d2bc/cfcb4cdf6080b531a2e3d0616837775ef44af412
+timestamp=2026-09-24T22:51:15.529Z level=INFO run=c1eae574 message=loop session.id=ses_f2a66ef07ffemPxQiSWliy4uGs step=7
+timestamp=2026-09-24T22:51:15.536Z level=INFO run=c1eae574 message="exiting loop" session.id=ses_f2a66ef07ffemPxQiSWliy4uGs
+timestamp=2026-09-24T22:51:15.550Z level=INFO run=c1eae574 message="disposing instance" directory=/work/stable-poolside-laguna-xs-2-1

@@ -1,0 +1,29 @@
+timestamp=2026-09-24T22:52:24.662Z level=INFO run=3b3213bd message="creating instance" directory=/work/stable-meta-muse-glimmer-30b
+timestamp=2026-09-24T22:52:24.666Z level=INFO run=3b3213bd message=fromDirectory directory=/work/stable-meta-muse-glimmer-30b
+timestamp=2026-09-24T22:52:24.906Z level=INFO run=3b3213bd message=bootstrapping directory=/work/stable-meta-muse-glimmer-30b
+timestamp=2026-09-24T22:52:24.923Z level=INFO run=3b3213bd message=loading path=/root/.config/opencode/config.json
+timestamp=2026-09-24T22:52:24.927Z level=INFO run=3b3213bd message=loading path=/root/.config/opencode/opencode.json
+timestamp=2026-09-24T22:52:24.936Z level=INFO run=3b3213bd message=loading path=/root/.config/opencode/opencode.jsonc
+timestamp=2026-09-24T22:52:25.302Z level=INFO run=3b3213bd message="all LSPs are disabled"
+timestamp=2026-09-24T22:52:25.305Z level=INFO run=3b3213bd message="all formatters are disabled"
+timestamp=2026-09-24T22:52:25.305Z level=INFO run=3b3213bd message=init
+timestamp=2026-09-24T22:52:25.593Z level=INFO run=3b3213bd message=created id=ses_f2a614186fferXZ6VsdABH5Tfk slug=mighty-forest version=1.18.32 projectID=cbedfa937241a0827d062c90457d0300487c5fb1 directory=/work/stable-meta-muse-glimmer-30b path="" workspaceID=undefined parentID=undefined title="New session - 2026-09-24T22:52:25.593Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1790290345593 time.updated=1790290345593
+timestamp=2026-09-24T22:52:25.614Z level=INFO run=3b3213bd message="event connected"
+timestamp=2026-09-24T22:52:26.495Z level=INFO run=3b3213bd message=loop session.id=ses_f2a614186fferXZ6VsdABH5Tfk step=0
+timestamp=2026-09-24T22:52:26.538Z level=INFO run=3b3213bd message=stream providerID=nvidia modelID=meta/muse-glimmer-30b session.id=ses_f2a614186fferXZ6VsdABH5Tfk small=true agent=title mode=primary
+timestamp=2026-09-24T22:52:26.565Z level=INFO run=3b3213bd message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=meta/muse-glimmer-30b
+timestamp=2026-09-24T22:52:26.955Z level=INFO run=3b3213bd message=initialized
+timestamp=2026-09-24T22:52:27.051Z level=INFO run=3b3213bd message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-meta-muse-glimmer-30b git=/root/.local/share/opencode/snapshot/cbedfa937241a0827d062c90457d0300487c5fb1/ffde82ccb5d6350ba5ab077c0e3096df69f6f73f
+timestamp=2026-09-24T22:52:27.061Z level=INFO run=3b3213bd message="shell tool using shell" shell=/usr/bin/bash
+timestamp=2026-09-24T22:52:27.076Z level=INFO run=3b3213bd message=init count=1
+timestamp=2026-09-24T22:52:27.275Z level=INFO run=3b3213bd message="watcher backend" directory=/work/stable-meta-muse-glimmer-30b platform=linux backend=inotify
+timestamp=2026-09-24T22:52:27.277Z level=INFO run=3b3213bd message="project copy refresh started" projectID=cbedfa937241a0827d062c90457d0300487c5fb1
+timestamp=2026-09-24T22:52:27.925Z level=INFO run=3b3213bd message="project copy refresh done" projectID=cbedfa937241a0827d062c90457d0300487c5fb1 updated=[] removed=[]
+timestamp=2026-09-24T22:52:27.962Z level=INFO run=3b3213bd message="booting location services" directory=/work/stable-meta-muse-glimmer-30b workspaceID=undefined
+timestamp=2026-09-24T22:52:27.978Z level=INFO run=3b3213bd message=process session.id=ses_f2a614186fferXZ6VsdABH5Tfk messageID=msg_0d59ec206001A9nAkzernSgnmC
+timestamp=2026-09-24T22:52:27.980Z level=INFO run=3b3213bd message=stream providerID=nvidia modelID=meta/muse-glimmer-30b session.id=ses_f2a614186fferXZ6VsdABH5Tfk small=false agent=build mode=primary
+timestamp=2026-09-24T22:52:27.983Z level=INFO run=3b3213bd message="llm runtime selected" llm.runtime=ai-sdk llm.provider=nvidia llm.model=meta/muse-glimmer-30b
+timestamp=2026-09-24T22:52:36.608Z level=INFO run=3b3213bd message=tracking hash=506ede44f980a6165703227e585ea993c21743bb cwd=/work/stable-meta-muse-glimmer-30b git=/root/.local/share/opencode/snapshot/cbedfa937241a0827d062c90457d0300487c5fb1/ffde82ccb5d6350ba5ab077c0e3096df69f6f73f
+timestamp=2026-09-24T22:52:36.689Z level=INFO run=3b3213bd message=loop session.id=ses_f2a614186fferXZ6VsdABH5Tfk step=1
+timestamp=2026-09-24T22:52:36.691Z level=INFO run=3b3213bd message="exiting loop" session.id=ses_f2a614186fferXZ6VsdABH5Tfk
+timestamp=2026-09-24T22:52:36.710Z level=INFO run=3b3213bd message="disposing instance" directory=/work/stable-meta-muse-glimmer-30b

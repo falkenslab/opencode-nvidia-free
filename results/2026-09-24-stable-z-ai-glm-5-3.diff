@@ -1,0 +1,27 @@
+diff --git a/slugify.py b/slugify.py
+index 3844f80..fc860ac 100755
+--- a/slugify.py
++++ b/slugify.py
+@@ -1,5 +1,8 @@
+ """Convierte textos en slugs para URLs."""
+ 
++import re
++import unicodedata
++
+ 
+ def slugify(text: str, max_length: int = 50) -> str:
+     """Devuelve un slug en minúsculas, sin acentos, con palabras separadas por guiones.
+@@ -11,4 +14,12 @@ def slugify(text: str, max_length: int = 50) -> str:
+       Si la primera palabra ya supera `max_length`, se corta a `max_length` caracteres.
+     - Si no queda nada, devuelve una cadena vacía.
+     """
+-    raise NotImplementedError
++    decomposed = unicodedata.normalize("NFD", text)
++    stripped = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
++    slug = re.sub(r"[^a-z0-9]+", "-", stripped.lower()).strip("-")
++    if len(slug) <= max_length:
++        return slug
++    cut = slug.rfind("-", 0, max_length)
++    if cut > 0:
++        return slug[:cut]
++    return slug[:max_length]
