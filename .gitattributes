@@ -1,0 +1,6 @@
+# Los scripts se ejecutan dentro de contenedores Linux: siempre con finales de línea LF.
+*.sh text eol=lf
+*.py text eol=lf
+Dockerfile text eol=lf
+*.json text eol=lf
+*.yml text eol=lf

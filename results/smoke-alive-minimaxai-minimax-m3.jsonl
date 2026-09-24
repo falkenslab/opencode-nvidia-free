@@ -1,0 +1,1 @@
+{"i": 1, "t_s": 0.013, "status": 410, "latency_s": 0.187, "ratelimit": {}, "error_body": "{\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'minimaxai/minimax-m3' has reached its end of life on 2026-09-09T09:00:00Z and is no longer available.\"}\n"}

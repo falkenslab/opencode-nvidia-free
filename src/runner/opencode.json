@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": false,
+  "share": "disabled",
+  "permission": {
+    "*": "allow",
+    "external_directory": "allow",
+    "doom_loop": "allow"
+  },
+  "provider": {
+    "nvidia": {
+      "options": {
+        "baseURL": "{env:NVIDIA_BASE_URL}"
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@ Se confirma o se refuta con: `pytest` al final de cada ejecución, los códigos 
 - **`NVIDIA_API_KEY`** en el entorno del anfitrión: cuenta gratuita en build.nvidia.com → *Get API Key*. Se pasa al contenedor con `-e` y nunca se escribe en el repo.
 - Conexión a internet. No hace falta GPU.
 - Modelos (gratuitos y con tool calling según Models.dev, septiembre de 2026):
-  - `moonshotai/kimi-k2.6`
+  - `moonshotai/kimi-k3` (en lugar de `kimi-k2.6`, que Models.dev marca como obsoleto y OpenCode ya no ofrece)
   - `qwen/qwen3-coder-480b-a35b-instruct`
   - `z-ai/glm-5.3`
   - `openai/gpt-oss-120b`
